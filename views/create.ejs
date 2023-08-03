@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Создание визитной карточки</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/create.css">
+</head>
+<body>
+    <main class="main-form">
+        <h1 class="header-title">Создание визитной карточки</h1>
+
+        <form class="form" action="/create" method="post" enctype="multipart/form-data">
+          <div class="form-inputs">
+              <label for="name">Имя:</label>
+              <input class="form-input" type="text" id="name" name="name" required>
+            
+              <label for="email">Email:</label>
+              <input class="form-input" type="email" id="email" name="email" required>
+            
+              <label for="phone">Телефон:</label>
+              <input class="form-input" type="tel" id="phone" name="phone" required>
+            
+              <label for="avatar">Аватар:</label>
+              <input class="form-input" type="file" id="avatar" name="avatar">
+            
+              <label for="description">Описание:</label>
+              <textarea class="form-input" id="description" name="description"></textarea>
+            
+              <button type="submit">Создать</button>
+          </div>
+          <!-- /.form-inputs -->
+        </form>
+        <div class="link">
+          <a href="/">Вернуться на главную</a>
+        </div>
+    </main>
+</body>
+</html>

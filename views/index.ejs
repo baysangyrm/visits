@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Визитные карточки</title>
+</head>
+<body>
+  <h1>Визитные карточки</h1>
+
+  <ul>
+    <% cards.forEach((card) => { %>
+      <li>
+        <strong><%= card.name %></strong> (<%= card.email %>, <%= card.phone %>)
+        <a href="/card/<%= card.id %>">Просмотр</a>
+      </li>
+    <% }); %>
+  </ul>
+
+  <a href="/create">Создать новую карточку</a>
+</body>
+</html>

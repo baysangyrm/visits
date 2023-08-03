@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= card.name %>'s Visiting Card</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="main-wrapper">
+                <% if (card.avatar) { %>
+                    <img src="<%= card.avatar %>" class="avatar" alt="Аватар <%= card.name %>">
+                <% } %>
+                <h1 class="visit-name"><%= card.name %></h1>
+                <p class="visit-additional">Почта: <%= card.email %></p>
+                <p class="visit-additional">Телефон: <%= card.phone %></p>
+                <% if (card.description) { %>
+                    <p class="visit-description" id="description">
+                        <%= card.description %>
+                    </p>
+                <% } %>
+                <div class="qr-container">
+                    <img src="<%= qrCodeData %>" alt="QR Code">
+                </div>
+                <!-- /.qr-container -->
+                <!-- ... -->
+            </div>
+            <!-- /.main-wrapper -->
+        </div>
+        <!-- /.container -->
+    </main>
+
+    <script>
+        // Function to detect links in the description and convert them into clickable links
+        function linkifyDescription() {
+            const descriptionElement = document.getElementById('description');
+            if (descriptionElement) {
+                const urlRegex = /(https?:\/\/[^\s]+)/g;
+                descriptionElement.innerHTML = descriptionElement.innerHTML.replace(urlRegex, function (url) {
+                    return `<a href="${url}" target="_blank">${url}</a>`;
+                });
+            }
+        }
+
+        // Call the linkifyDescription function after the page is loaded
+        window.onload = function() {
+            linkifyDescription();
+        };
+    </script>
+</body>
+</html>

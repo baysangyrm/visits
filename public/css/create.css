@@ -1,0 +1,153 @@
+.form{
+    width: calc(100vw - 500px);
+    margin: 0 auto;
+    text-align: center;
+}
+.form-input{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.header-title{
+    text-align: center;
+}
+.link{
+    text-align: center;
+}
+.main-form{
+    background-color: #333;
+    max-width: fit-content;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+h1,h2,h3,h4,h5,h6,p,span,strong,sub,sup,a,label,address{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+label{
+    color: white;
+}
+body {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  ul, ol, li {
+    list-style: none;
+}
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+}
+input{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background: none;
+    background-color: #ccc;
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: white;
+}
+textarea{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: #ccc;
+    color: white;
+    padding: 20px 35px;
+    min-width: 40px;
+    min-height: 10px;
+    border-radius: 60px;
+}
+  .main{
+    width: 100%;
+    margin-top: 50px;
+  }
+  .main-wrapper{
+    border-radius: 30px;
+    min-height: 80vh;
+    background-color: #fff;
+  }
+  .container {
+    max-width: 600px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: calc(100vw - 50px);
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .card {
+    text-align: center;
+  }
+  
+  .card h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .card .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .card .social a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .card .social a:hover {
+    color: #4078c0;
+  }
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  a{
+    color: #333 !important;
+    list-style: none;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #ebc3c3 !important;
+  }
+
+  
